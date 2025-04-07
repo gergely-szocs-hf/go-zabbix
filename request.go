@@ -28,7 +28,7 @@ type Request struct {
 
 	// AuthToken is the Request's authentication token. When used in a Session,
 	// this value is overwritten by the Session.
-	AuthToken string `json:"auth,omitempty"`
+	AuthToken string `json:"-"`
 }
 
 // requestId is a global counter used to assign each APi request a unique ID.
